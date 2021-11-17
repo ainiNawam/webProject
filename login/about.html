@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="project.css">
+<style>
+
+
+  
+  
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #aa3904;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+    background-color: rgb(218, 120, 74);
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgba(253, 249, 246, 0.602);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b8481c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .div {
+  background-color: rgba(240, 146, 84, 0.876);
+  width: 300px;
+  border: 15px solid rgb(128, 115, 0);
+  padding: 70px;
+  margin: 100px;
+  float: left;
+}
+  </style>
+<body style="background-image: url(lib.jpg);">
+
+<div id="navbar">
+  <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="signup.html"><i class="fa fa-fw fa-user"></i> Sign up</a>
+</div>
+
+<div class="div"> SN eLIBRARY system is a virtual library with online reading 
+  material collections that can be accessed by users and admin. 
+  User can sign up as a member to get notification of every new release. 
+  For user that has not log in or sign up as a member, they still
+   can read the material.
+</div>
+</body>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+  </html>
